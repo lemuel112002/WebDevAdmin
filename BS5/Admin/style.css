@@ -1,0 +1,125 @@
+/* Start of Sign in Page */
+.signin-page, .signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 500px;
+    background-color: #D1D1D1;
+    box-shadow: 2px 2px 8px #D1D1D1;
+    padding: 16px;
+}
+
+h5 {
+    margin-left: 25px;
+}
+/* End of Sign in Page */
+
+/* Start of Sign up page */
+
+/* End of Sign in Page */
+
+/* Start of Admin Dashboard */
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #343a40;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+/* Start of Sidebar menu */
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 25px;
+}
+
+.brand-name {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    transform: translateX(-100%); /* Initially hidden */
+    transition: transform 0.3s ease;
+    z-index: 999; /* Ensure sidebar is below the header */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Show the sidebar */
+}
+
+.sidebar h2 {
+    text-align: center; 
+    color: #FFFFFF; 
+    margin: 12px 0; 
+    margin-top: 25px; 
+    font-size: 25px;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    transition: margin-left 0.3s ease; /* Smooth transition for content shift */
+    margin-top: 70px; /* Space for header */
+}
+
+.content.shift {
+    margin-left: 250px; /* Shift content when sidebar is open */
+}
+/* End of Sidebar menu */
+
+/* Start of Earnings Box */
+.icon-container {
+    padding: 10px;
+}
+/* End of Earnings Box */
+
+/* End of Admin Dashboard */
