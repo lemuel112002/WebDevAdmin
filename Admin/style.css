@@ -1,0 +1,171 @@
+/* Start of Admin Sign in */
+.container-signin {
+    width: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.form-control:invalid {
+    border-color: #dc3545;
+}
+
+.form-control:valid {
+    border-color: #28a745;
+}
+
+.logo-signin {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.sign-in-button:hover, .sign-up-button:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.form-group {
+    width: 60%;
+    margin: 0 auto;
+}
+/* End of Admin Sign in */
+
+/* Start of Admin Sign up */
+.card-signup {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-body {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/* End of Admin Sign up */
+
+/* Start of Admin Dashboard */
+.admin-dashboard {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adjustments for the header and sidebar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Customize this color */
+    padding: 10px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.brand-name {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.logo-admin {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    height: 100%;
+    width: 220px;
+    background-color: #333;
+    padding-top: 60px; /* Adjust based on the height of your header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0; /* Show sidebar */
+}
+
+.sidebar a {
+    margin-top: 10px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    transition:  all .6s ease-in;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Additional CSS to ensure spacing and alignment */
+.header img, .header .brand-name, .header .menu-container {
+    margin: 0 10px;
+}
+
+/* Vertical Navigation Menu */
+.vertical-navigation-menu {
+    position: fixed;
+    top: 250px; /* Adjust based on the height of your header */
+    left: 60px; /* Magdagdag ng espasyo sa kaliwang bahagi */
+    width: 100px; /* Pahabain ang width */
+    display: flex; /* Initially visible */
+    flex-direction: column;
+    background-color: #dc143c;
+    border-radius: 10px; /* Add border radius to match the image */
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add some shadow for better visibility */
+}
+
+.vertical-navigation-menu a {
+    padding: 10px 20px;
+    text-align: center; /* Center the icons */
+    text-decoration: none;
+    color: #FFFFFF; /* Use white color for icons */
+    border-bottom: 1px solid #ddd; /* Add bottom border to separate icons */
+}
+
+.vertical-navigation-menu i {
+    font-size: 24px;
+}
+
+/* Content */
+.home {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-left: 240px; /* Adjust margin to make space for sidebar */
+    margin-right: 40px;
+    padding: 10px;
+    padding-bottom: 50px;
+    transition: margin-left 0.3s;
+}
+/* End of Admin Dashboard */
